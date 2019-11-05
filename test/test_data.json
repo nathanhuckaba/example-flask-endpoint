@@ -1,0 +1,242 @@
+{
+   "single_req_no_words": {
+      "requests": [
+         {
+            "id": 0,
+            "message": ""
+         }
+      ],
+      "count": 0,
+      "status": 200
+   },
+   "single_req_single_word": {
+      "requests": [
+         {
+            "id": 0,
+            "message": "leapfrogs"
+         }
+      ],
+      "count": 1,
+      "status": 200
+   },
+   "single_req_multiple_words": {
+      "requests": [
+         {
+            "id": 0,
+            "message": "toeing wisps bruises smacking demonstrated"
+         }
+      ],
+      "count": 5,
+      "status": 200
+   },
+   "single_req_multiple_words_random_spacing": {
+      "requests": [
+         {
+            "id": 0,
+            "message": "heath     sinusoidal   categorizing    fulling   verticals  exculpated  vest's    Linton's     lush   obstructing Mirach's     giantesses     premised passel   Jennings's     hunger's lure     furnish     overseen     eulogizing"
+         }
+      ],
+      "count": 20,
+      "status": 200
+   },
+   "multiple_req_single_word": {
+      "requests": [
+         {
+            "id": 0,
+            "message": "admissible"
+         },
+         {
+            "id": 1,
+            "message": "emerged"
+         },
+         {
+            "id": 2,
+            "message": "ascension's"
+         },
+         {
+            "id": 3,
+            "message": "yam"
+         },
+         {
+            "id": 4,
+            "message": "shapeliness"
+         }
+      ],
+      "count": 5,
+      "status": 200
+   },
+   "multiple_req_multiple_word": {
+      "requests": [
+         {
+            "id": 0,
+            "message": "upshots receivership somewhat comprehensibility stallion"
+         },
+         {
+            "id": 1,
+            "message": "potash's troupe's raga creeps gambolling"
+         },
+         {
+            "id": 2,
+            "message": "thyroid's wens Ezekiel's McMillan thickset Sue's"
+         },
+         {
+            "id": 3,
+            "message": "meowed pleasurable canoe useable Corvus's junkie's elm schoolmarm's resale's"
+         },
+         {
+            "id": 4,
+            "message": "reclassifying ganging"
+         },
+         {
+            "id": 5,
+            "message": "zippier rajah's protozoon's deign finals piggier impiety profaned alimony skating"
+         },
+         {
+            "id": 6,
+            "message": "Alfredo's conditioner's violin lacquering cobbling car Madagascar matrimonial metaphysics's"
+         },
+         {
+            "id": 7,
+            "message": "elm postpaid strop ellipsis's Earlene's commendation's managing treat emancipating"
+         },
+         {
+            "id": 8,
+            "message": "sanctity's busheling knaves endeared intermediate skyscraper's"
+         },
+         {
+            "id": 9,
+            "message": "Hippocratic's footsies churned"
+         }
+      ],
+      "count": 64,
+      "status": 200
+   },
+   "non_unique_ids_1": {
+      "requests": [
+         {
+            "id": 1,
+            "message": "curtseys groove's thinned croissants"
+         },
+         {
+            "id": 1,
+            "message": "undiscovered prospect smacks Tisha attributed oh fronds poultry's"
+         },
+         {
+            "id": 1,
+            "message": "profuse tornados autumn shine's boxes attractively"
+         }
+      ],
+      "count": 4,
+      "status": 200
+   },
+   "non_unique_ids_2": {
+      "requests": [
+         {
+            "id": 2,
+            "message": "Hesiod fettle seed's Delbert's understated Assamese's"
+         },
+         {
+            "id": 1,
+            "message": "Tallinn reuses popped gang's smoothes disturb boxcar hunting Mather deodorizing"
+         },
+         {
+            "id": 1,
+            "message": "skimp forefingers paraffin's identification's pin's impetuosity Valkyries hitches orations"
+         }
+      ],
+      "count": 16,
+      "status": 200
+   },
+   "non_unique_ids_3": {
+      "requests": [
+         {
+            "id": 1,
+            "message": "campfire hart robocall's pickup Heine barbershops Euclid"
+         },
+         {
+            "id": 2,
+            "message": "invalided intransigence's Yesenia"
+         },
+         {
+            "id": 1,
+            "message": "kites gown's costar Mesolithic's O'Rourke Mayas"
+         }
+      ],
+      "count": 10,
+      "status": 200
+   },
+   "non_unique_ids_4": {
+      "requests": [
+         {
+            "id": 1,
+            "message": "qualification disestablishing haversacks"
+         },
+         {
+            "id": 1,
+            "message": "parchment Montpelier Eleanor's Cotonou's Sepoy's"
+         },
+         {
+            "id": 2,
+            "message": "scrupulous Tweed's spatters multipliers flawing muleteer deuce"
+         }
+      ],
+      "count": 10,
+      "status": 200
+   },
+   "invalid_json": {
+      "requests": [
+         "invalid"
+      ],
+      "status": 400
+   },
+   "empty_request": {
+      "requests": [
+         {}
+      ],
+      "status": 400
+   },
+   "no_id_field": {
+      "requests": [
+         {
+            "message": "test"
+         }
+      ],
+      "status": 400
+   },
+   "no_message_field": {
+      "requests": [
+         {
+            "id": 0
+         }
+      ],
+      "status": 400
+   },
+   "malformed_id_field": {
+      "requests": [
+         {
+            "id": false,
+            "message": ""
+         }
+      ],
+      "status": 400
+   },
+   "malformed_message_field": {
+      "requests": [
+         {
+            "id": 0,
+            "message": false
+         }
+      ],
+      "status": 400
+   },
+   "extra_field": {
+      "requests": [
+         {
+            "id": 0,
+            "message": "test",
+            "extra": 0
+         }
+      ],
+      "status": 400
+   }
+}

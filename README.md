@@ -1,8 +1,8 @@
 # Flask Endpoint Example
-Flask is a Python web framework that can be used to implement or prototype web services very quickly.
+Flask is a Python web framework that can be used to implement or prototype web services very quickly.</br>
 This project demonstrates using the Flask web framework to implement a single, simple REST API endpoint.
  
-The endpoint is `/message`. It accepts POST requests containg JSON data.
+The endpoint is `/message`. It accepts POST requests containing JSON data.
 
 Request format:
 ```
@@ -22,7 +22,7 @@ Response format:
 }
 ```
 
-All code for the endpoint is contained in `ExampleEndpoint.py`
+The code that implements the endpoint is contained in `ExampleEndpoint.py`.
 
 ## Prerequisites
 This project was implemented and tested using the following:
@@ -50,7 +50,8 @@ optional arguments:
 ```
 
 Test data can be found in `test/`, along with a test data generation script, `test/generate_test_data.py`.
-This script generates test data for 17 test cases and was used to generate the included `test/test_data.json` file.
+This script generates test data for 17 test cases and was used to generate the included `test/test_data.json` file. 
+Words are pulled randomly from the input file given and used to populate requests during generation.
 
 ```
 usage: generate_test_data.py [-h] [-i INPUT_FILE] [-o OUTPUT_FILE]
@@ -64,12 +65,12 @@ optional arguments:
                         /usr/share/dict/words)
   -o OUTPUT_FILE, --output_file OUTPUT_FILE
                         File to write output to (default:
-                        ./test/test_data.json)
+                        ./test_data.json)
                        
 ```
 
-The test driver reads the test cases and runs each on a fresh ExampleEndpoint instance. 
-The test cases include requets to send, expected responses, and expected status codes. 
+The test driver reads the test cases and runs each on a fresh ExampleEndpoint instance.</br>
+The test cases include requests to send, expected responses, and expected status codes. 
 
 To run the test driver and execute the test cases, use the following:
 ```
@@ -113,7 +114,7 @@ You should see output similar to the following:
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Requsts can be easily sent to the service using curl on the same machine. For example:
+Requests can be easily sent to the service using curl on the same machine. For example:
 ```
 curl --data '{"id":0, "message": "This is a test"}' -H "Content-Type: application/json" -X POST http://localhost:5000/message
 curl --data '{"id":1, "message": "Testing again"}'  -H "Content-Type: application/json" -X POST http://localhost:5000/message
@@ -127,7 +128,7 @@ Output of curl commands (responses from server):
 {"count":6}
 ```
 
-The Flask server indicates that it has successfully processed both requests:
+The Flask server indicates that it has successfully processed all requests:
 ```
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 127.0.0.1 - - [04/Nov/2019 21:08:56] "POST /message HTTP/1.1" 200 -
